@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="ZombieShooter" package="com.mikeymike.zombieshooter" version="1.0.0" company="MikeyMike" />
+	<app main="Main" path="C:\xampp\htdocs\HaxeDemo\Export" file="ZombieShooter" />
+	
+	<source path="source" />
+	<haxelib name="openfl" />
+	<assets path="Assets" rename="assets" />
+	
+</project>
