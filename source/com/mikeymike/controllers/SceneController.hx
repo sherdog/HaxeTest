@@ -29,10 +29,9 @@ class SceneController
 		}
 		
 		var tmpClass = Type.createInstance(mScenes[sceneName], []);
-		var tmpInstance = Type.createInstance(Type.resolveClass("com.mikeymike.scenes." + sceneName), []);
 		
-		mCurrentScene = tmpInstance;
-		mStage.addChild(tmpInstance);
+		mCurrentScene = tmpClass;
+		mStage.addChild(tmpClass);
 	}
 	
 	private function initMap():Void

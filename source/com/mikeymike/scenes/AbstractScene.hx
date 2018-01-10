@@ -10,8 +10,13 @@ class AbstractScene extends Sprite
 
 	public function new() 
 	{
-		addEventListener(Event.ADDED_TO_STAGE, onStageAdd);
 		super();
+		onBeforeLoad();
+	}
+	
+	public function onBeforeLoad():Void
+	{
+		addEventListener(Event.ADDED_TO_STAGE, onStageAdd);
 	}
 	
 	private function onStageAdd(event:Event):Void
@@ -20,12 +25,12 @@ class AbstractScene extends Sprite
 		onSceneReady();
 	}
 	
-	private function onSceneReady():Void
+	public function onSceneReady():Void
 	{
 		//Override in concrete class
 	}
 	
-	private function onSceneRemoved():Void
+	public function onSceneRemoved():Void
 	{
 		
 	}

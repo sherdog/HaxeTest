@@ -1,5 +1,6 @@
 package com.mikeymike.scenes;
 import com.mikeymike.interfaces.IScene;
+import com.mikeymike.slots.tripledoublediamond.*;
 
 class GameScene extends AbstractScene implements IScene
 {
@@ -7,6 +8,9 @@ class GameScene extends AbstractScene implements IScene
 	{
 		trace("Game Scene On Scene Ready Called");
 		super.onSceneReady();
-	}
 	
+		
+		var testSlot:TripleDoubleDiamondSlotMachine = new TripleDoubleDiamondSlotMachine();
+		addChild(testSlot);
+	}
 }
