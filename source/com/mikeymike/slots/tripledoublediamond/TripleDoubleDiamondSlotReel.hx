@@ -16,5 +16,4 @@ class TripleDoubleDiamondSlotReel extends SlotReeel
 	{
 		super.onReadyForDisplay();
 	}
-	
 }

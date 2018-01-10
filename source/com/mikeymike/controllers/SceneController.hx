@@ -8,9 +8,9 @@ import com.mikeymike.scenes.*;
 
 class SceneController
 {
+	//Could implement a scene loader with an actual loading screen.
 	private var mStage:Stage;
 	private var mScenes:Map<String, Class<AbstractScene>>;
-
 	private var mCurrentScene:AbstractScene;
 
 	public function new(stage:Stage)
@@ -34,6 +34,9 @@ class SceneController
 		mStage.addChild(tmpClass);
 	}
 	
+	/**
+	 * Add new Scenes here for reference.
+	 */
 	private function initMap():Void
 	{
 		mScenes.set("MainScene", MainScene);
