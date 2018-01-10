@@ -11,7 +11,11 @@ import openfl.Assets;
  */
 class TripleDoubleDiamondSlotMachine extends SlotMachine 
 {
-
+	public function new()
+	{
+		super();
+	}
+	
 	override public function onReadyForDisplay():Void
 	{
 		var bmpData:BitmapData = Assets.getBitmapData("assets/tripleDiamonSlotMachine.png");
